@@ -2,11 +2,11 @@
 
 [![Build Status](https://travis-ci.org/mapbox/vnu-validate-html.svg?branch=master)](https://travis-ci.org/mapbox/vnu-validate-html)
 
+🚧🚧 **WORK IN PROGRESS!** 🚧🚧
+
 Validate static HTML with the Nu Html Checker.
 
 Uses [vnu-jar](https://www.npmjs.com/package/vnu-jar), so requires a Java 8 environment.
-
-🚧🚧 **WORK IN PROGRESS!** 🚧🚧
 
 More tests and options could be added, and more edge cases anticipated (e.g. `type: 'info'` warnings).
 
