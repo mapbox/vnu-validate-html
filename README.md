@@ -1,8 +1,14 @@
 # @mapbox/vnu-validate-html
 
+[![Build Status](https://travis-ci.org/mapbox/vnu-validate-html.svg?branch=master)](https://travis-ci.org/mapbox/vnu-validate-html)
+
 Validate static HTML with the Nu Html Checker.
 
 Uses [vnu-jar](https://www.npmjs.com/package/vnu-jar), so requires a Java 8 environment.
+
+🚧🚧 **WORK IN PROGRESS!** 🚧🚧
+
+More tests and options could be added, and more edge cases anticipated (e.g. `type: 'info'` warnings).
 
 ## API
 
@@ -21,7 +27,7 @@ Uses [vnu-jar](https://www.npmjs.com/package/vnu-jar), so requires a Java 8 envi
 const vnuValidateHtml = require('@mapbox/vnu-validate-html');
 
 vnuValidateHtml.validate(myFilesGlob)
-  .then(report => /* ... */)
+  .then(report => console.log(report))
   .catch(/* ... */);
 ```
 
@@ -35,4 +41,4 @@ Run `vnu-validate-html --help` for details.
 
 [html-validator](https://github.com/zrrrzzt/html-validator) and [html-validator-cli](https://github.com/zrrrzzt/html-validator-cli) validate your HTML through Validator.nu's [Web Service Interface](https://github.com/validator/validator/wiki/Service-%C2%BB-HTTP-interface).
 You don't need Java to run those.
-But you might hit rate limits on the API.
+But you might hit rate limits on the API, if you validate a lot of HTML files frequently.

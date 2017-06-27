@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate basically works 1`] = `
+"
+[4mtest/fixtures/one.html[24m [90m[[39m[35m12:3[39m[90m-[39m[35m12:6[39m[90m][39m
+No “p” element in scope but a “p” end tag seen.
+[31m⚆_⚆[39m Are you illegally nesting a block-level element inside a “p” element?
+  [90mv</div>
+    [39m[33m</p>[39m[90m
+  </bod[39m
+"
+`;
+
+exports[`validate strips colors 1`] = `
+"
+test/fixtures/one.html [12:3-12:6]
+No “p” element in scope but a “p” end tag seen.
+⚆_⚆ Are you illegally nesting a block-level element inside a “p” element?
+  v</div>
+    </p>
+  </bod
+"
+`;
