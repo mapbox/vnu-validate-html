@@ -8,7 +8,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint *.js test lib",
+    "lint": "eslint .",
     "format": "prettier --single-quote --write '{,lib/**/,bin/**/,test/**/}*.js'",
     "test-jest": "jest",
     "pretest": "npm run lint",
