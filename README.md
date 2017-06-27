@@ -2,6 +2,8 @@
 
 Validate static HTML with the Nu Html Checker.
 
+Uses [vnu-jar](https://www.npmjs.com/package/vnu-jar), so requires a Java 8 environment.
+
 ## API
 
 ### validate
@@ -28,3 +30,9 @@ vnuValidateHtml.validate(myFilesGlob)
 The CLI allows you to run [`validate`](#validate) and log the report.
 
 Run `vnu-validate-html --help` for details.
+
+## Alternatives
+
+[html-validator](https://github.com/zrrrzzt/html-validator) and [html-validator-cli](https://github.com/zrrrzzt/html-validator-cli) validate your HTML through Validator.nu's [Web Service Interface](https://github.com/validator/validator/wiki/Service-%C2%BB-HTTP-interface).
+You don't need Java to run those.
+But you might hit rate limits on the API.
