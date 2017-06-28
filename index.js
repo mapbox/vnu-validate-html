@@ -40,12 +40,10 @@ function stringifyValidationError(data) {
     process.cwd(),
     data.url.replace(/^file:/, '')
   );
-  const startLine = data.firstLine === undefined
-    ? data.lastLine
-    : data.firstLine;
-  const startColumn = data.firstColumn === undefined
-    ? data.lastColumn
-    : data.firstColumn;
+  const startLine =
+    data.firstLine === undefined ? data.lastLine : data.firstLine;
+  const startColumn =
+    data.firstColumn === undefined ? data.lastColumn : data.firstColumn;
   const endLine = data.lastLine;
   const endColumn = data.lastColumn;
   let fullPosition = chalk.grey('[');
